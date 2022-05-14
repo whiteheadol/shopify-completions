@@ -4,8 +4,8 @@ import './Idea.css'
 const Idea = ({ prompt, response }) => {
   return (
     <div className="idea">
-      <p>prompt: {prompt}</p>
-      <p>response: {response}</p>
+      <p><strong>prompt: </strong>{prompt}</p>
+      <p><strong>response: </strong>{response}</p>
     </div>
   )
 };

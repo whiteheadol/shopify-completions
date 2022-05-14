@@ -4,6 +4,28 @@ import './Form.css';
 class Form extends Component {
   constructor() {
     super();
+    this.state = {
+      prompt: '',
+      response: '',
+    }
+  }
+
+  handleChange = event => {
+    this.setState({[event.target.name]: event.target.value})
+  }
+
+  submitIdea = event => {
+    event.preventDefault();
+    const newIdea = {
+      id: Date.now(),
+      ...this.state
+    }
+    this.props.addIdea(newIdea)
+    this.clearInput();
+  }
+
+  clearInput = () => {
+    this.setState({ prompt: '', response: '' })
   }
 
   render() {
@@ -13,10 +35,12 @@ class Form extends Component {
         <input
           type='text'
           placeholder='ex: hot, hiking, inexpensive'
-          name='user-input'
+          name='prompt'
           className="form-input"
+          value={this.state.prompt}
+          onChange={event => this.handleChange(event)}
         />
-        <button className="submit-button">let's go</button>
+        <button className="submit-button" onClick={event => this.submitIdea(event)}>let's go</button>
       </form>
     )
   }
