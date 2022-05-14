@@ -1,3 +1,22 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub-components {
+  display: flex;
+  border: 3px solid pink;
+  padding: 2em 4em 2em 4em;
+}
+
+h1 {
+  margin-bottom: 2em;
+  margin-top: 1em;
+}
+
 /* .App {
   text-align: center;
 }
