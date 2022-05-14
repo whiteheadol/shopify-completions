@@ -1,9 +1,12 @@
 import React from 'react';
 import './Idea.css'
 
-const Idea = ({ response }) => {
+const Idea = ({ prompt, response }) => {
   return (
-    <p>{response}</p>
+    <div>
+      <p>prompt: {prompt}</p>
+      <p>response: {response}</p>
+    </div>
   )
 };
 
