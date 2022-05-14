@@ -1,8 +1,19 @@
-import React from 'react';
+import React, {Fragment} from 'react';
+import Idea from './Idea';
 
-const IdeasContainer = () => {
+const IdeasContainer = ({ responses }) => {
+  const ideaComponents = responses.map(el => {
+    return (
+      <Idea
+        response={el}
+      />
+    )
+  })
+
   return (
-    <p>ideas container!</p>
+    <div>
+      {ideaComponents}
+    </div>
   )
 };
 

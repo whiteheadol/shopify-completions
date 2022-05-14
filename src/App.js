@@ -6,16 +6,30 @@ import './App.css';
 import Form from './components/Form.js';
 import IdeasContainer from './components/IdeasContainer.js';
 
-function App() {
-  return (
-    <div className="App">
-      <h1>let ai help you plan your next adventure</h1>
-      <div className="sub-components">
-        <Form />
-        <IdeasContainer />
+class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      prompts: [
+        1, 2, 3
+      ],
+      responses: [
+        'hfe;fdaaf', 'fhidaofdh', 'fdsafdas'
+      ]
+    }
+  };
+
+  render() {
+    return (
+      <div className="App">
+        <h1>let ai help you plan your next adventure</h1>
+        <div className="sub-components">
+          <Form />
+          <IdeasContainer responses={this.state.responses}/>
+        </div>
       </div>
-    </div>
-  );
+    );
+  }
 }
 
 export default App;
