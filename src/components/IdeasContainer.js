@@ -7,6 +7,7 @@ const IdeasContainer = ({ ideas }) => {
       <Idea
         prompt={el.prompt}
         response={el.response}
+        key={el.id}
       />
     )
   })
