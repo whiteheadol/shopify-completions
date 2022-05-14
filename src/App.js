@@ -10,13 +10,7 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      ideas: [
-        {id: 1, prompt: '1', response: 'fesaf'},
-        {id: 2, prompt: '2', response: 'fesafdsa'},
-        {id: 3, prompt: '3', response: 'fsrt'},
-        {id: 4, prompt: '4', response: 'hguhpiojion'},
-        {id: 5, prompt: '5', response: 'bvhjo'},
-      ]
+      ideas: []
     }
   };
 

@@ -16,12 +16,31 @@ class Form extends Component {
 
   submitIdea = event => {
     event.preventDefault();
-    const newIdea = {
-      id: Date.now(),
-      ...this.state
-    }
-    this.props.addIdea(newIdea)
+    // this.props.addIdea(newPrompt)
+    // invoke method to post, returning new resposne?
+    this.postPrompt();
     this.clearInput();
+  }
+
+  postPrompt = () => {
+    const data = {
+      prompt: this.state.prompt,
+      temperature: 0.6,
+      max_tokens: 50,
+      top_p: 1.0,
+      frequency_penalty: 0.0,
+      presence_penalty: 0.0
+    }
+
+    fetch("https://api.openai.com/v1/engines/text-curie-001/completions", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      Authorization: `Bearer ${process.env.OPENAI_SECRET}`,
+    },
+      body: JSON.stringify(data),
+    })
+    .then(resonse => console.log(response))
   }
 
   clearInput = () => {
