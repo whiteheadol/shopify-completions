@@ -10,11 +10,13 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      prompts: [
-        1, 2, 3
-      ],
-      responses: [
-        'hfe;fdaaf', 'fhidaofdh', 'fdsafdas'
+      ideas: [
+        {prompt: '1', response: 'fesaf'},
+        {prompt: '2', response: 'fesafdsa'},
+        {prompt: '3', response: 'fsrt'},
+        {prompt: '4', response: 'hguhpiojion'},
+        {prompt: '5', response: 'bvhjo'},
+
       ]
     }
   };
@@ -25,7 +27,7 @@ class App extends Component {
         <h1>let ai help you plan your next adventure</h1>
         <div className="sub-components">
           <Form />
-          <IdeasContainer responses={this.state.responses}/>
+          <IdeasContainer ideas={this.state.ideas} />
         </div>
       </div>
     );
