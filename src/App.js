@@ -20,13 +20,17 @@ class App extends Component {
     }
   };
 
+  addIdea = (newIdea) => {
+    this.setState({ ideas: [newIdea, ...this.state.ideas]})
+  }
+
   render() {
     return (
       <div className="App">
         <h1>let ai help you plan your next adventure</h1>
         <div className="sub-components">
           <div className="form-styling">
-            <Form />
+            <Form addIdea={this.addIdea}/>
           </div>
           <IdeasContainer ideas={this.state.ideas} />
         </div>
