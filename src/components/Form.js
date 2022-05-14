@@ -8,7 +8,14 @@ class Form extends Component {
 
   render() {
     return (
-      <p>form!</p>
+      <form>
+        <input
+          type='text'
+          placeholder='ex: hot, hiking, inexpensive'
+          name='user-input'
+        />
+        <button>let's go</button>
+      </form>
     )
   }
 };
