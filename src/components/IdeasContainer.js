@@ -1,5 +1,7 @@
 import React, {Fragment} from 'react';
 import Idea from './Idea';
+import './IdeasContainer.css';
+
 
 const IdeasContainer = ({ ideas }) => {
   const ideaComponents = ideas.map(el => {
@@ -13,7 +15,8 @@ const IdeasContainer = ({ ideas }) => {
   })
 
   return (
-    <div>
+    <div className="ideas-container">
+      <h2>your past inspiration:</h2>
       {ideaComponents}
     </div>
   )

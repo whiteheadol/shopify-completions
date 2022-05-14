@@ -1,0 +1,9 @@
+.ideas-container {
+  display: flex;
+  flex-direction: column;
+  height: 70vh;
+  width: 50vh;
+  overflow: scroll;
+  border: 2px solid blue;
+  margin: 0em 1.5em 0em 1.5em;
+}
