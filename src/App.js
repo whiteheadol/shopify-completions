@@ -11,12 +11,11 @@ class App extends Component {
     super();
     this.state = {
       ideas: [
-        {prompt: '1', response: 'fesaf'},
-        {prompt: '2', response: 'fesafdsa'},
-        {prompt: '3', response: 'fsrt'},
-        {prompt: '4', response: 'hguhpiojion'},
-        {prompt: '5', response: 'bvhjo'},
-
+        {id: 1, prompt: '1', response: 'fesaf'},
+        {id: 2, prompt: '2', response: 'fesafdsa'},
+        {id: 3, prompt: '3', response: 'fsrt'},
+        {id: 4, prompt: '4', response: 'hguhpiojion'},
+        {id: 5, prompt: '5', response: 'bvhjo'},
       ]
     }
   };
@@ -26,7 +25,10 @@ class App extends Component {
       <div className="App">
         <h1>let ai help you plan your next adventure</h1>
         <div className="sub-components">
-          <Form />
+          <div className="form-styling">
+            <h2>describe your dream trip in a few words</h2>
+            <Form />
+          </div>
           <IdeasContainer ideas={this.state.ideas} />
         </div>
       </div>
