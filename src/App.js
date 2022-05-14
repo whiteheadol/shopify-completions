@@ -26,7 +26,6 @@ class App extends Component {
         <h1>let ai help you plan your next adventure</h1>
         <div className="sub-components">
           <div className="form-styling">
-            <h2>describe your dream trip in a few words</h2>
             <Form />
           </div>
           <IdeasContainer ideas={this.state.ideas} />
