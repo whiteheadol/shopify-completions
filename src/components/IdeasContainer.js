@@ -1,11 +1,12 @@
 import React, {Fragment} from 'react';
 import Idea from './Idea';
 
-const IdeasContainer = ({ responses }) => {
-  const ideaComponents = responses.map(el => {
+const IdeasContainer = ({ ideas }) => {
+  const ideaComponents = ideas.map(el => {
     return (
       <Idea
-        response={el}
+        prompt={el.prompt}
+        response={el.response}
       />
     )
   })
