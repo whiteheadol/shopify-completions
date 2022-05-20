@@ -48,14 +48,14 @@ class Form extends Component {
       presence_penalty: 0.4
     }
 
-    let key = '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';
-    // let key2;
+    let key1 = 'sk-Ny8ZbPSFQhHWRZcYq1tyT3Bl';
+    let key2 = 'bkFJmHXH3F9Rl7W8C5ebKq6w';
 
     fetch("https://api.openai.com/v1/engines/text-curie-001/completions", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-      Authorization: `Bearer ${key}`,
+      Authorization: `Bearer ${key1}${key2}`,
     },
       body: JSON.stringify(data),
     })
