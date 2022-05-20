@@ -29,3 +29,8 @@
   font-size: 1em;
   border-radius: 0.25em;
 }
+
+.error-message, .input-error-message {
+  padding: 2em;
+  color: #2c3f45;
+}
