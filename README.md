@@ -1,70 +1,81 @@
-# Getting Started with Create React App
+# Shopify Completions (Fun with GPT-3)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<img width="500" alt="home page" src="https://user-images.githubusercontent.com/96206823/169663216-fbd0959c-d9b1-4779-8f69-9d32969dddf1.png">
 
-## Available Scripts
+## Deploy Link
+View the project [here]().
 
-In the project directory, you can run:
+## Table of Contents
 
-### `npm start`
+  - [Introduction & Learning Goals](#introduction-&-learning-goals)
+  - [Technologies](#technologies)
+  - [Features](#features)
+  - [Page Demo](#page-demo)
+  - [Possible Future Extensions](#possible-future-extensions)
+  - [Set Up](#set-up)
+  - [Contributors](#contributors)
+  - [Project Specs](#project-specs)
+  - [Project GitHub Repo](#project-github-repo)
+  - [Additional Resources](#additional-resources)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Introduction & Learning Goals
+This project was completed as a part of Shopify's 2022 Fall Front End Developer Intern Challenge. Developers were given a project spec along with a specific API, but the rest of the design was to be chosen by them.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+My personal goals while completing this project included the following:
+- Keep the UI clean, simple, and easy to understand for a new user.
+- Fully test each user story, including intercepting the Post request upon form submission.
+- Push myself to use a framework (React) that I recently began learning.
+- Prioritize my app's accessibility.
 
-### `npm test`
+Personally, my biggest wins were gaining a deeper understanding of React and Cypress, both of which are new technologies for me. I did choose to complete the project without the use of React hooks, as I wanted the extra practice building out class-based components.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+My biggest challenge, was the use of an API key for the first time. I spent quite a bit of time attempting to store it in an .env file with little success, and although my solution at the moment works, I realize that this is not correct. I hope to revisit this in the future.
 
-### `npm run build`
+## Technologies
+  - Javascript
+  - React
+  - HTML
+  - CSS
+  - Cypress
+  - Fetch API
+  - NPM
+  - Lighthouse (accessibility)
+  - Wave (accessibility)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Features
+- When the page loads, the user will see a title, a simple form, and an empty container labeled **your past inspiration**.
+- The form instructs a user to describe their dream trip in a few words, and an example description is included in the input field. Inputs can be as simple as one word, but results will be more accurate if the user provides three to four words.
+- After deciding on their trip description, the user can click **let's go** to see their recommended destination. Both their prompt, and the ai's suggested vacation will appear in the container on the right. As their suggestions grow, they can scroll through the container to view them all.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Page Demo
+Submitting a destination prompt:
+<img width="500" alt="submitting a prompt" src="https://user-images.githubusercontent.com/96206823/169663233-80d6cc55-fdeb-4de7-b4af-d816b99833df.png">
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Receiving a response:
+<img width="500" alt="viewing a response" src="https://user-images.githubusercontent.com/96206823/169663238-996c665e-586d-432b-9bf1-40de1af3b908.png">
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Possible Future Extensions
+- As mentioned previously, I hope to revisit this application with more knowledge of API keys. I would like to refactor my current solution to the correct key storage instead.
+- I would also like to add a repository of background images, and change the image to appropriately reflect the most recently suggested destination. (Ex: If the ai suggests that a user visit Fiji, I'd like the background to change to a tropical beach.)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Set Up
+1. Clone this repo to your local machine.
+2. `cd` into your local directory.
+3. Run `npm install`.
+4. Run `npm start`.
+5. Enjoy exploring the application!
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Contributors
+- Olivia Whitehead (GitHub: [whiteheadol](https://github.com/whiteheadol))
 
-## Learn More
+## Project Specs
+- The spec for this project can be found [here](https://docs.google.com/document/d/1O7mCynsz_cBXkEaCFGSZAuvAOY84QVq35l20xJwjOYg/edit?usp=sharing).
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Project GitHub Repo
+- The project repo can be found [here](https://github.com/whiteheadol/shopify-completions).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Additional Resources
+- [Project Board](https://github.com/whiteheadol/shopify-completions/projects/1)
+- Forest image sourced from Pexels, photographer found [here](https://www.pexels.com/@creative-vix/).
