@@ -49,9 +49,13 @@ My biggest challenge, was the use of an API key for the first time. I spent quit
 
 ## Page Demo
 Submitting a destination prompt:
+
+
 <img width="500" alt="submitting a prompt" src="https://user-images.githubusercontent.com/96206823/169663233-80d6cc55-fdeb-4de7-b4af-d816b99833df.png">
 
 Receiving a response:
+
+
 <img width="500" alt="viewing a response" src="https://user-images.githubusercontent.com/96206823/169663238-996c665e-586d-432b-9bf1-40de1af3b908.png">
 
 
