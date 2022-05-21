@@ -27,7 +27,7 @@ class Form extends Component {
 
   submitIdea = (event) => {
     event.preventDefault();
-    if (this.state.prompt) {
+    if (this.state.prompt.length >= 3) {
       this.postPrompt(this.state.prompt);
       this.setState({input: true})
     } else {
@@ -81,7 +81,7 @@ class Form extends Component {
   render() {
     return (
       <form className="form-container">
-      <h2>describe your dream trip in a few words</h2>
+      <h2 className="form-title">describe your dream trip in a few words:</h2>
         <input
           type='text'
           placeholder='ex: hot, hiking, inexpensive'
