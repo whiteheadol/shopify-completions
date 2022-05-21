@@ -3,7 +3,7 @@
 <img width="500" alt="home page" src="https://user-images.githubusercontent.com/96206823/169663216-fbd0959c-d9b1-4779-8f69-9d32969dddf1.png">
 
 ## Deploy Link
-View the project [here]().
+View the project [here](https://profound-syrniki-b9c41f.netlify.app/).
 
 ## Table of Contents
 
