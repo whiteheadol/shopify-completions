@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import Form from '../Form/Form.js';
+import IdeasContainer from '../IdeasContainer/IdeasContainer.js';
+// import logo from './logo.svg';
 import './App.css';
-
-// Component Imports
-import Form from './components/Form.js';
-import IdeasContainer from './components/IdeasContainer.js';
 
 class App extends Component {
   constructor() {

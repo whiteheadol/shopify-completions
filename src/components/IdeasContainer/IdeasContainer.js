@@ -1,5 +1,5 @@
-import React, {Fragment} from 'react';
-import Idea from './Idea';
+import React from 'react';
+import Idea from '../Idea/Idea';
 import './IdeasContainer.css';
 
 
@@ -16,7 +16,7 @@ const IdeasContainer = ({ ideas }) => {
 
   return (
     <div className="ideas-container">
-      <h2>your past inspiration:</h2>
+      <h2 className="ideas-title">your past inspiration:</h2>
       {ideaComponents}
     </div>
   )
