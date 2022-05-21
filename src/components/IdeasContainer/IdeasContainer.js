@@ -15,10 +15,10 @@ const IdeasContainer = ({ ideas }) => {
   })
 
   return (
-    <div className="ideas-container">
+    <section className="ideas-container">
       <h2 className="ideas-title">your past inspiration:</h2>
       {ideaComponents}
-    </div>
+    </section>
   )
 };
 
