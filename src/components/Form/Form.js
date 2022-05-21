@@ -81,7 +81,7 @@ class Form extends Component {
   render() {
     return (
       <form className="form-container">
-      <h2 className="form-title">describe your dream trip in a few words:</h2>
+        <h2 className="form-title">describe your dream trip in a few words:</h2>
         <input
           type='text'
           placeholder='ex: hot, hiking, inexpensive'
