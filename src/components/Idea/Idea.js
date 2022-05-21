@@ -3,10 +3,10 @@ import './Idea.css'
 
 const Idea = ({ prompt, response }) => {
   return (
-    <div className="idea">
+    <article className="idea">
       <p><strong>prompt: </strong>{prompt}</p>
       <p><strong>response: </strong>{response}</p>
-    </div>
+    </article>
   )
 };
 

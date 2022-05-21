@@ -17,15 +17,15 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <main className="App">
         <h1>let ai help you plan your next adventure</h1>
-        <div className="sub-components">
+        <section className="sub-components">
           <div className="form-styling">
             <Form addCard={this.addCard}/>
           </div>
           <IdeasContainer ideas={this.state.ideas} />
-        </div>
-      </div>
+        </section>
+      </main>
     );
   }
 }
