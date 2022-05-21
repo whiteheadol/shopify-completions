@@ -82,6 +82,7 @@ class Form extends Component {
     return (
       <form className="form-container">
         <h2 className="form-title">describe your dream trip in a few words:</h2>
+        <label className="form-label">for best results, use 3-4 descriptors</label>
         <input
           type='text'
           placeholder='ex: hot, hiking, inexpensive'
